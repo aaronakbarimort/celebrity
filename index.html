@@ -9,6 +9,60 @@
     <title>Celebrity Dating Quiz</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Celebrity Dating Quiz</h1>
+      <h4>Fill out the form to find your celebrity match whom you can then ask out via Twitter.</h4>
 
+      <form id="celebrity">
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select class="form-control" id="gender">
+            <option value="">Choose Your Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="movie">Movie Preference:</label>
+          <select class="form-control" id="movie">
+            <option value="">Choose Your Preferred Genre</option>
+            <option value="1">Action</option>
+            <option value="2">Horror</option>
+            <option value="3">RomCom</option>
+            <option value="4">Drama</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <legend class="col-form-label">Cats or Dogs:</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cat" value="option1">
+            <label class="form-check-label" for="cat">Cats</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dog" value="option2">
+            <label class="form-check-label" for="dog">Dogs</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <legend class="col-form-label">Enter your Twitter handle:</legend>
+          <label class="sr-only" for="twitter">Twitter Handle</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="twitter" placeholder="Twitter Handle">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <div id="answer">
+        <p><span id="celebrity-name"></span> is a perfect match for you! Now ask them out, because, why not? You never know...but we all kind of know...it won't work out...sorry...not sorry.</p>
+      </div>
+    </div>
   </body>
 </html>
